@@ -15,6 +15,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .p-big {
+        padding: 150px;
+      }
+    </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1486,8 +1491,39 @@
       </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-5 form">
       <div class="container-fluid">
+        <div class="d-flex bg-secondary rounded-4 p-big" style="gap: 140px; background-image: url(images/bg-leaves-img-pattern.png); background-size: cover;">
+          <div>
+           <h3 style="font-size: 50px;">
+             Get <span style="color: hwb(40 11% 0%); font-size: 50px;">25% Discount</span><br> on your first <br> purchase
+           </h3>
+           <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ratione ipsa, rerum eum quos repudiandae minus, ipsam veritatis, porro iusto dolorem ducimus
+           </p>
+          </div>
+          <form style="width: 500px;">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc@mail.com">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+              <label class="form-check-label" for="checkIndeterminate">
+                Subscribe to the newsletter
+              </label>
+            </div>
+            <button type="button" class="btn btn-dark mt-4"
+                 style=" --bs-btn-padding-x: 5rem; --bs-btn-font-size: 1rem; width: 500px;">
+                submit
+              </button>
+          </form>
+        </div>
+        
+       
 
         Implement the form here...
 
@@ -2010,35 +2046,42 @@
       </div>
     </section>
 
-    <section id="latest-blog" class="py-5">
-      <div class="container-fluid">
-        Implement blog here...
-      </div>
-    </section>
-
-    <section class="py-5 my-5">
-      <div class="container-fluid">
-
-        <div class="bg-warning py-5 rounded-5" style="background-image: url('images/bg-pattern-2.png') no-repeat;">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <img src="images/phone.png" alt="phone" class="image-float img-fluid">
-              </div>
-              <div class="col-md-8">
-                <h2 class="my-5">Shop faster with foodmart App</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in suspendisse iaculis. Amet blandit tortor praesent ante vitae. A, enim pretiummi senectus magna. Sagittis sed ptibus liberolectus non et psryroin.</p>
-                <div class="d-flex gap-2 flex-wrap">
-                  <img src="images/app-store.jpg" alt="app-store">
-                  <img src="images/google-play.jpg" alt="google-play">
-                </div>
-              </div>
+    <section id="latest-blog" class="container">
+      <div class="row">
+        
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/post-thumb-1.jpg" class="card-img-top" alt="Fruits-image">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Top 10 casual look ideas to dress up your kids</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.Aliqute eleifend viverra enim tincidunt dones quam.<br>A in arcu, hendrerit neque dolor morbi...</p>
             </div>
           </div>
         </div>
-
+    
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/post-thumb-2.jpg" class="card-img-top" alt="Fruits-image">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Top 10 casual look ideas to dress up your kids</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.Aliqute eleifend viverra enim tincidunt dones quam.<br>A in arcu, hendrerit neque dolor morbi...</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/post-thumb-3.jpg" class="card-img-top" alt="Fruits-image">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Top 10 casual look ideas to dress up your kids</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.Aliqute eleifend viverra enim tincidunt dones quam.<br>A in arcu, hendrerit neque dolor morbi...</p>
+            </div>
+          </div>
+        </div>
+    
       </div>
     </section>
+    
 
     <section class="py-5">
       <div class="container-fluid">
