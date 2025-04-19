@@ -259,6 +259,11 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--dark-color);
   font-weight: 700;
 }
+
+a{
+  text-decoration: none;
+}
+
 .display-1,
 .display-2,
 .display-3,
@@ -655,6 +660,19 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: -140px;
   margin-bottom: -140px;
 }
+
+#link-top{
+background-color: unset;
+border: 1px solid rgba(0, 0, 0, 0.6);
+border-radius: 4px;
+color: rgba(0, 0, 0, 0.8);
+text-decoration: none;
+}
+
+.color-green{
+  background-color: #e7ebe1;
+}
+
 @media screen and (max-width:991px) {
   .image-float {
     margin: 0;
