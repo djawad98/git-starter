@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Of Week</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: skyblue;
+            color: white;
+            font-size: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        const numberOfWeek = prompt("Enter Day of Week Number (1-7)");
+        if (numberOfWeek >= 1 && numberOfWeek < 8) 
+        {
+            if (numberOfWeek == 1) {
+                document.write("<p>Today is Saturday</p>");
+            }else if(numberOfWeek == 2){
+                document.write("<p>Today is Sunday</p>");
+            }else if(numberOfWeek == 3){
+                document.write("<p>Today is Monday</p>");
+            }else if(numberOfWeek == 4){
+                document.write("<p>Today is Tuesday</p>");
+            }else if(numberOfWeek == 5){
+                document.write("<p>Today is Wednesday</p>");
+            }else if(numberOfWeek == 6){
+                document.write("<p>Today is Thursday</p>");
+            }else if(numberOfWeek == 7){
+                document.write("<p>Today is Friday</p>");
+            }
+        }else{
+            alert("Number Not Defined! Please Enter Number Between 1-7");
+            document.write("<h2>Number Not Defined! </h2> <p style='color: whitesmoke';>\'refresh page for try again\'</p>");
+        }
+    </script>
+</body>
+
+</html>
