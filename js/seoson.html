@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoson</title>
+</head>
+
+<body>
+
+    <script>
+        const monthOfTheYear = prompt("Enter Month of the year");
+        if (monthOfTheYear <= 12 && monthOfTheYear > 0) {
+            if (monthOfTheYear >= 1 && monthOfTheYear < 4) {
+                alert("Seoson is Spring");
+            }
+            else if (monthOfTheYear >= 4 && monthOfTheYear < 7) {
+                alert("Seoson is Summer");
+            }
+            else if (monthOfTheYear >= 7 && monthOfTheYear < 10) {
+                alert("Seoson is Autumn");
+            }
+            else {
+                alert("Seoson is Winter");
+            }
+        }else{
+            alert("Seoson is not defined");
+        }
+    </script>
+</body>
+
+</html>
