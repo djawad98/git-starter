@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const kilometers = Number (prompt("لطفا برای محاسبه کرایه تاکسی مقدار کیلومتر طی شده را وارد کنید"));
+        let price ;
+
+        if (kilometers <= 5){
+            price = (kilometers * 1000)
+        }
+
+        else if ( kilometers <= 10){
+            price = (kilometers * 2000)
+        } 
+
+        else price =(kilometers * 3000 )
+        
+        alert ("کرایه پرداختی شما مبلغ " + price + " تومان می باشد.");
+    </script>
+</body>
+</html>
