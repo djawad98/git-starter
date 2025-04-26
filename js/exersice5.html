@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const month = prompt (" لطفا به من بگو الان در کدام ماه شمسی هستیم و آن را از 1 تا 12  به عدد وارد کن  مثال : 5 ");
+
+        if (month === "1" || month === "2" || month === "3"){
+            alert( "بهار")
+        }
+        else if ( month === "4" || month === "5" || month === "6") {
+            alert ( " تابستان ")
+        }
+        else if (month === "7" || month === "8" || month === "9"){
+            alert ("پائیز")
+        }
+        else if (month === "10" || month === "11" || month === "12"){
+            alert("زمستان")
+        }
+        else if (month > "12" || month < "1") {
+            alert("لطفا فقط اعداد 1 تا 12 را انتخاب کنید !")
+        }
+        
+    </script>
+</body>
+</html>
