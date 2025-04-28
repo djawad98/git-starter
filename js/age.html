@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+
+<body>
+
+    <script>
+        function ageLabel(age) {
+            if (!isNaN(age)) {
+                if (age >= 1 && age < 4) {
+                    document.write("Age Label: Infant");
+                } else if (age < 13) {
+                    document.write("Age Label: Kid");
+                } else if (age < 19) {
+                    document.write("Age Label: Teenager");
+                } else if (age < 25) {
+                    document.write("Age Label: Young Adult");
+                } else if (age < 36) {
+                    document.write("Age Label: Adult");
+                } else {
+                    document.write("Age Label: Senior");
+                }
+            } else {
+                alert("Age only can be a number, please try again!");
+            }
+        }
+
+        const age=prompt("Enter your age:");
+        ageLabel(age);
+    </script>
+</body>
+
+</html>
