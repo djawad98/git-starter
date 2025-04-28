@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert ("  سلام و عرض تشکر برای انتخاب هتل ما لطفا برای تکمیل رزرو خدمات به این سوال ها پاسخ دهید:");
+        const question1= confirm("آیا شما دارای سند ازدواج دائمی می باشید ؟");
+        let question2
+        
+        if(question1 == true){
+            alert(" سپاس از پاسخ شما، لطفا برای استفاده از خدمات هتل مدارک لازم را به همراه داشته باشید");
+        }
+        else{
+           question2= confirm("آیا شما دارای سند ازدواج موقت می باشید؟");
+        }
+           if(question2 == true){
+           alert("سپاس از پاسخ شما لطفا برای استفاده از خدمات هتل مدارک لازم را به همراه داشته باشید");
+           }
+           if(question2 == false){
+           alert("مهمان گرامی برای استفاده از خدمات انتخاب شده توسط شما داشتن مدرک رسمی ازدواج موقت و یا دائم الزامی میباشد.");
+        }
+    </script>
+</body>
+</html>
