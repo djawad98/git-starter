@@ -39,12 +39,16 @@ li {
     width: 70%;
     height: 60%;
     margin: 0 auto;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(skyblue,powderblue);
     border-radius: 6px;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
     overflow: auto;
+    position: relative;
+    scrollbar-color: #014f83 #dbdfe4;
+    scrollbar-width: thin;
 }
 
 .form {
@@ -87,12 +91,23 @@ li {
     cursor: pointer;
 }
 
+.ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .li{
     font-size: .5rem;
     font-weight: 500;
     color: #ffffff;
     padding: 20px;
-    background-color: #139dd409;
+    background-color: #139dd441;
+    border-radius: 6px;
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .li:nth-child(2n+2){
@@ -100,7 +115,49 @@ li {
     
 }
 
+li.selected{
+    background-color: #137dd444 !important;
+    transform: translateX(15px) translateY(-3px);
+    border-radius: 8px;
+}
+
+.span{
+    cursor: text;
+}
+
+.btn-delete{
+    position: absolute;
+    bottom: 6.4%;
+    width: 20%;
+    background-color: #014f83;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-delete-all{
+    left: 15%;
+    border-bottom-right-radius: 6px;
+}
+
+.btn-deselect-all{
+    transform: translateX(-50%);
+    left: 50%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.btn-delete-selected{
+    right: 15%;
+    border-bottom-left-radius: 6px;
+}
+
 @media (max-width:800px){
+
+    html{
+        font-size: 25px;
+    }
+
     .container-2{
         width: 100%;
     }
@@ -108,6 +165,13 @@ li {
         width: 90%;
     }
 
+    .btn-delete-all{
+        left: 0;
+    }
+
+    .btn-delete-selected{
+        right: 0;
+    }
 }
 
 @media (min-width:1600px){
@@ -116,6 +180,18 @@ li {
     }
     .input-box{
         width: 40%;
+    }
+
+    .btn-delete{
+        width: 13%;
+    }
+
+    .btn-delete-all{
+        left: 25%;
+    }
+
+    .btn-delete-selected{
+        right: 25%;
     }
 
 }
