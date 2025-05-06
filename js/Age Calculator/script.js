@@ -1,6 +1,6 @@
 const inputEl = document.querySelector(".input");
 const btnSubmit = document.querySelector(".btn-submit");
-const divEl = document.querySelector(".div");
+const modalEl = document.querySelector(".modal");
 const pEl = document.querySelector(".result");
 const btnClose = document.querySelector(".btn-close");
 const bodyEl = document.body;
@@ -13,6 +13,13 @@ const birthCalculator = () => {
     const birthDate = new Date(birthInput);
     //greftan tarikh emroz
     const today = new Date();
+
+    if (birthDate > today) {
+        modalEl.style.display = "flex";
+        pEl.textContent = "The entered date of birth is greater than the current date.";
+        return;
+    }
+
 
     //mohasebe ekhtelaf sal motevaled ba emroz
     let years = today.getFullYear() - birthDate.getFullYear();
@@ -34,25 +41,30 @@ const birthCalculator = () => {
         years--;
         months += 12;
     }
-
-    divEl.classList.add("container-result");
-    bodyEl.classList.add("body");
-    if (years === 0) {
-        pEl.textContent = `${months} month ${days} day`;
-    } else if (months === 0) {
-        pEl.textContent = `${years} year ${days} day`;
-    } else if (days === 0) {
-        pEl.textContent = `${years} year ${months} month`;
-    } else {
-        pEl.textContent = `${years} year ${months} month ${days} day`;
+    //dar khroji 0 chap nakonad
+    let result = '';
+    {
+        if (years > 0) {
+            result += `${years} years`;
+        } if (months > 0) {
+            result += ` ${months} months`;
+        } if (days > 0) {
+            result += ` ${days} days`;
+        }
     }
+    modalEl.style.display = "flex";
+    pEl.textContent = result;
 }
 
-btnSubmit.addEventListener("click", function () {
+btnSubmit.addEventListener("click", function (event) {
+    event.preventDefault();
     birthCalculator();
 })
 
 btnClose.addEventListener("click", function () {
-    divEl.classList.remove("container-result");
-    bodyEl.classList.remove("body");
+    modalEl.style.display = "none";
+})
+
+window.addEventListener("click", function (e) {
+    if(e.target === modalEl) modalEl.style.display = "none";
 })
