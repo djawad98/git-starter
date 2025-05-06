@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Fare</title>
+</head>
+
+<body>
+
+    <script>
+        const distance = prompt("Enter your distance per km");
+        let fare;
+
+        if (distance <= 5) {
+            fare = distance * 1000;
+        } else if (distance > 5 && distance <= 10) {
+            fare = distance * 2000;
+        }else{
+            fare=distance*3000;
+        }
+        alert("Fare: " + fare);
+    </script>
+</body>
+
+</html>

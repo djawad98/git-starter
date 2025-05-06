@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working hours</title>
+</head>
+
+<body>
+
+    <script>
+        const arrivalTime = prompt("Enter your Arrival time (0-24)");
+
+        if (arrivalTime >= 0 && arrivalTime <= 24) {
+            if (arrivalTime >= 8 && arrivalTime <= 20) {
+                alert("Working hours");
+            } else {
+                alert("Outside of business hours");
+            }
+        }else{
+            alert("The entry time is not defined");
+        }
+    </script>
+</body>
+
+</html>

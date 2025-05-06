@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorite pets</title>
+</head>
+
+<body>
+
+    <script>
+        const petsName = prompt("Enter your favorite pets (Example: cat, dog)");
+        const petsNameArray = petsName.split(',');
+        petsNameArray.forEach(function (pet) {
+            document.write(pet + "<br>");
+        });
+    </script>
+</body>
+
+</html>
