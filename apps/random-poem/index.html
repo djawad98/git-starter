@@ -1,0 +1,46 @@
+<!-- https://api.ganjoor.net/index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فال</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- State 1: Initial State -->
+        <div class="state active" id="state1">
+            <h1 class="title">فال خود را بگیرید</h1>
+            <div class="poet-select">
+                <select>
+                    <option value="" disabled selected>انتخاب شاعر</option>
+                    <option value="hafez">حافظ</option>
+                    <option value="saadi">سعدی</option>
+                    <option value="rumi">مولوی</option>
+                    <option value="khayyam">خیام</option>
+                </select>
+            </div>
+            <button class="fortune-button">فال گرفتن</button>
+        </div>
+
+        <!-- State 2: Poem State -->
+        <div class="state" id="state2">
+            <div class="poem-container">
+                <div class="poem-columns">
+                    <div class="poem-text">
+                        <!-- First column poem text will go here -->
+                        شعر اول
+                    </div>
+                    <div class="poem-text">
+                        <!-- Second column poem text will go here -->
+                        شعر دوم
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
